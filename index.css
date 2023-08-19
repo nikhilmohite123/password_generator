@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Cherry+Bomb+One&family=Oswald:wght@700&family=Permanent+Marker&family=Quicksand&display=swap');
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Itim', sans-serif;
+}
+
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(231deg, rgba(22, 6, 40, 1) 0%, rgba(52, 28, 79, 1) 50%, rgba(88, 7, 125, 1) 100%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.container {
+    max-width: 450px;
+    width: 90%;
+}
+
+h1 {
+    color: white;
+    opacity: 0.75;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: 2px;
+}
+
+div {
+    display: block;
+}
+
+.pass-box {
+    position: relative;
+    border-radius: 1rem;
+    background-color: hsl(268, 75%, 9%);
+    margin: 1rem 0;
+    padding-top: 0.35rem;
+    border-bottom: 0.35rem solid hsl(281, 89%, 26%);
+    display: flex;
+    align-items: center;
+}
+
+.password::placeholder {
+    text-transform: uppercase;
+    position: absolute;
+    /* top: 50%; */
+    left: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 30px;
+
+    color: rgb(109, 109, 6);
+}
+
+.password {
+
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 1.15rem 1rem;
+    color: hsl(52, 100%, 62%);
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 30px;
+    letter-spacing: 1px;
+    padding-right: 3.25rem;
+}
+.copy-container{
+    position: relative;
+}
+.copyMsg{
+    color: white;
+    position: absolute;
+    bottom:33px;
+    right: -10px;
+    font-size: bold;
+    background-color:hsl(281, 89%, 26%) ;
+    color:hsl(52, 100%, 62%) ;
+    border-radius: 25px;
+    transition: all 100ms;
+}
+.active{
+    padding: 10px 15px;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    cursor: pointer;
+}
+
+.main-box {
+    width: 100%;
+    background-color: hsl(268, 75%, 9%);
+    padding: 2rem;
+    border-radius: 1rem;
+    border-bottom: 0.35rem solid hsl(281, 89%, 26%);
+}
+
+
+
+.len-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.len-container p:nth-child(1) {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+}
+
+.len-container p:nth-child(2) {
+    color: hsl(52, 100%, 62%);
+    ;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.strength-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.strength-container p {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.strength-indicator {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: rgb(247, 247, 247);
+    box-shadow: 0 0 15px 1px rgb(217, 208, 208);
+}
+
+.btn {
+    width: 100%;
+    padding: 1rem 0;
+    background-color: hsl(285, 91%, 52%);
+    text-align: center;
+    border-radius: 0.75rem;
+    border-bottom: 0.35rem solid hsl(52, 100%, 62%);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: hsl(52, 100%, 62%);
+    font-weight: 600;
+    font-size: 1.25rem;
+
+}
+
+.checkboxes {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    gap: 0 1rem;
+}
+
+.checkboxes input {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid hsl(176, 100%, 44%);
+    cursor: pointer;
+    position: relative;
+    border-radius: 0.35rem;
+}
+
+.checkboxes input:checked {
+    background-color: hsl(176, 100%, 44%);
+}
+
+.checkboxes input:checked::before {
+    content: '✔';
+    position: absolute;
+    color: hsl(198, 20%, 13%);
+    font-size: 1.05rem;
+    font-weight: bolder;
+    left: 50%;
+    top: -3.5px;
+    transform: translate(-50%);
+}
+
+.checkboxes label {
+    color: white;
+    font-size: 1.25rem;
+    letter-spacing: 0.75px;
+}
+
+.range-slider {
+    appearance: none;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    outline: none;
+    height: 0.75rem;
+    cursor: pointer;
+    background: hsl(268, 47%, 21%);
+    border-radius: 1rem;
+    background-image: linear-gradient(hsl(285, 91%, 52%), hsl(285, 91%, 52%));
+    background-repeat: no-repeat;
+}
+
+.range-slider::-webkit-slider-thumb {
+    z-index: 1;
+    position: relative;
+    appearance: none;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: hsl(52, 100%, 62%);
+    margin-top: -3px;
+    box-shadow: 0px 0px 20px 0px rgba(255, 229, 61, 0.50);
+    transition: all 100ms ease-in
+}
+
+.range-slider:focus {
+    outline: 3px solid hsl(52, 100%, 62%);
+}
+
+.range-slider::-webkit-slider-thumb:hover{
+    
+ outline: 2px solid  hsl(52, 100%, 62%);
+ background-color: hsl(268, 75%, 9%);
+ box-shadow: 0px 0px 25px 5px rgba(255, 229, 61, 0.80);
+}
+
+
+
+/* For tablet devices */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .checkboxes {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .len-container, .strength-container {
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;  /* create a little space between items */
+    }
+
+    .strength-indicator {
+        margin-left: 0;  /* remove margin as we're stacking items */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+        margin-bottom: 10px; /* add some space after the title */
+    }
+
+    .password {
+        font-size: 1.2rem;
+        padding-right: 1.5rem;
+    }
+
+    .len-container p, .strength-container p, .checkboxes label {
+        font-size: 1rem;
+    }
+    
+    .checkboxes {
+        gap: 5px;
+    }
+}
+
+
